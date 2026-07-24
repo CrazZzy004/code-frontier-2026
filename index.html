@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CODE FRONTIER 2026 — международная конференция для разработчиков. 2 дня, 40+ спикеров, воркшопы и afterparty. Москва, 17–18 октября 2026." />
+  <meta name="theme-color" content="#05070a" />
+  <title>CODE FRONTIER 2026 — конференция для разработчиков</title>
+  <link rel="preconnect" href="" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- ░░ Progress bar ░░ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ░░ Header ░░ -->
+  <header class="site-header" id="siteHeader">
+    <a href="#top" class="brand" aria-label="CODE FRONTIER — на главную">
+      <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+      <span class="brand__text">CODE&nbsp;FRONTIER</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#about">О конференции</a>
+      <a href="#speakers">Спикеры</a>
+      <a href="#schedule">Программа</a>
+      <a href="#tickets">Билеты</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a href="#tickets" class="btn btn--sm nav-cta">Купить билет</a>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- ░░ Hero ░░ -->
+    <section class="hero" id="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__inner container">
+        <p class="eyebrow reveal"><span class="dot"></span> Москва · 17–18 октября 2026 · Digital October</p>
+
+        <h1 class="hero__title reveal">
+          Конференция<br />для тех, кто<br /><span class="grad">строит будущее</span>
+        </h1>
+
+        <p class="hero__lead reveal">
+          Два дня о фронтенде, архитектуре, AI и продуктовой инженерии.
+          40+ спикеров из ведущих технологических команд, живые воркшопы и нетворкинг.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#tickets" class="btn btn--primary">Купить билет</a>
+          <a href="#speakers" class="btn btn--ghost">Смотреть спикеров</a>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown reveal" id="countdown" aria-label="Обратный отсчёт до старта">
+          <div class="countdown__cell"><b data-cd="days">00</b><span>дней</span></div>
+          <div class="countdown__cell"><b data-cd="hours">00</b><span>часов</span></div>
+          <div class="countdown__cell"><b data-cd="minutes">00</b><span>минут</span></div>
+          <div class="countdown__cell"><b data-cd="seconds">00</b><span>секунд</span></div>
+        </div>
+      </div>
+
+      <div class="hero__stats container">
+        <div class="stat reveal"><b>40+</b><span>спикеров</span></div>
+        <div class="stat reveal"><b>6</b><span>треков</span></div>
+        <div class="stat reveal"><b>1200</b><span>участников</span></div>
+        <div class="stat reveal"><b>2</b><span>дня</span></div>
+      </div>
+    </section>
+
+    <!-- ░░ Marquee ░░ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Frontend</span><span>·</span><span>Architecture</span><span>·</span><span>AI&nbsp;Engineering</span><span>·</span><span>DevX</span><span>·</span><span>Performance</span><span>·</span><span>Design&nbsp;Systems</span><span>·</span><span>Rust</span><span>·</span><span>WebGPU</span><span>·</span>
+        <span>Frontend</span><span>·</span><span>Architecture</span><span>·</span><span>AI&nbsp;Engineering</span><span>·</span><span>DevX</span><span>·</span><span>Performance</span><span>·</span><span>Design&nbsp;Systems</span><span>·</span><span>Rust</span><span>·</span><span>WebGPU</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- ░░ About ░░ -->
+    <section class="section" id="about">
+      <div class="container about__grid">
+        <div class="reveal">
+          <p class="section-eyebrow">01 — О конференции</p>
+          <h2 class="section-title">Не доклады ради галочки,<br />а инженерия по существу</h2>
+        </div>
+        <div class="about__body reveal">
+          <p>
+            CODE FRONTIER — это площадка, где инженеры делятся не маркетингом, а реальными
+            решениями: как держат 60 fps под нагрузкой, как выкатывают дизайн-системы на три
+            продукта, как приручают LLM в проде.
+          </p>
+          <p>
+            Живой формат: доклады по 30 минут, глубокие воркшопы, Q&amp;A без цензуры и
+            afterparty, где договориться проще, чем в переписке.
+          </p>
+          <ul class="feature-list">
+            <li><i aria-hidden="true">→</i> 6 параллельных треков под любой стек</li>
+            <li><i aria-hidden="true">→</i> Записи всех докладов участникам</li>
+            <li><i aria-hidden="true">→</i> Зона нетворкинга и стенды компаний</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ Speakers ░░ -->
+    <section class="section section--alt" id="speakers">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-eyebrow">02 — Спикеры</p>
+            <h2 class="section-title">Кто выступает</h2>
+          </div>
+          <p class="section-note">Полный список — в мобильном приложении конференции</p>
+        </div>
+
+        <div class="speakers-grid">
+          <!-- cards injected/styled -->
+          <article class="speaker reveal">
+            <div class="speaker__avatar" data-initials="ЕК"></div>
+            <h3>Елена Кравцова</h3>
+            <p class="speaker__role">Staff Frontend Engineer</p>
+            <p class="speaker__topic">«Рендер 12k строк без единого фриза»</p>
+          </article>
+          <article class="speaker reveal">
+            <div class="speaker__avatar" data-initials="MR"></div>
+            <h3>Marat Rahimov</h3>
+            <p class="speaker__role">Principal Architect</p>
+            <p class="speaker__topic">«Модульный монолит вместо микросервисного ада»</p>
+          </article>
+          <article class="speaker reveal">
+            <div class="speaker__avatar" data-initials="ДС"></div>
+            <h3>Дмитрий Соловьёв</h3>
+            <p class="speaker__role">AI Engineering Lead</p>
+            <p class="speaker__topic">«LLM в проде: латентность, стоимость, надёжность»</p>
+          </article>
+          <article class="speaker reveal">
+            <div class="speaker__avatar" data-initials="AL"></div>
+            <h3>Anna Lindqvist</h3>
+            <p class="speaker__role">Design Systems Lead</p>
+            <p class="speaker__topic">«Токены, которые переживают редизайн»</p>
+          </article>
+          <article class="speaker reveal">
+            <div class="speaker__avatar" data-initials="ИП"></div>
+            <h3>Игорь Петров</h3>
+            <p class="speaker__role">Performance Engineer</p>
+            <p class="speaker__topic">«INP: как мы вытащили худшие 5% сессий»</p>
+          </article>
+          <article class="speaker reveal">
+            <div class="speaker__avatar" data-initials="KT"></div>
+            <h3>Kenji Tanaka</h3>
+            <p class="speaker__role">WebGPU Researcher</p>
+            <p class="speaker__topic">«GPU-вычисления прямо в браузере»</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ Schedule ░░ -->
+    <section class="section" id="schedule">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-eyebrow">03 — Программа</p>
+            <h2 class="section-title">Расписание · День 1</h2>
+          </div>
+          <div class="day-switch" role="tablist" aria-label="Выбор дня">
+            <button class="day-switch__btn is-active" data-day="1" role="tab" aria-selected="true">17 окт</button>
+            <button class="day-switch__btn" data-day="2" role="tab" aria-selected="false">18 окт</button>
+          </div>
+        </div>
+
+        <!-- Day 1 -->
+        <div class="timeline" data-day-panel="1">
+          <div class="tl-row reveal"><span class="tl-time">09:30</span><div class="tl-body"><h4>Регистрация и welcome-кофе</h4><p>Бейджи, мерч, знакомства</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">10:30</span><div class="tl-body"><h4>Открытие · Елена Кравцова</h4><p>Keynote: куда движется фронтенд в 2027</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">11:30</span><div class="tl-body"><h4>Marat Rahimov</h4><p>Модульный монолит вместо микросервисного ада</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">13:00</span><div class="tl-body tl-body--break"><h4>Обед и нетворкинг</h4><p>Фуд-корт, стенды партнёров</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">14:30</span><div class="tl-body"><h4>Игорь Петров</h4><p>INP: как мы вытащили худшие 5% сессий</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">16:00</span><div class="tl-body"><h4>Воркшоп · Anna Lindqvist</h4><p>Собираем дизайн-систему с нуля (2 часа)</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">19:00</span><div class="tl-body tl-body--party"><h4>Afterparty</h4><p>DJ-сет, напитки, разговоры</p></div></div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="timeline is-hidden" data-day-panel="2">
+          <div class="tl-row reveal"><span class="tl-time">10:00</span><div class="tl-body"><h4>Дмитрий Соловьёв</h4><p>LLM в проде: латентность, стоимость, надёжность</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">11:15</span><div class="tl-body"><h4>Kenji Tanaka</h4><p>GPU-вычисления прямо в браузере (WebGPU)</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">12:30</span><div class="tl-body tl-body--break"><h4>Обед</h4><p>Свободный формат</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">14:00</span><div class="tl-body"><h4>Панель: будущее DevX</h4><p>Дискуссия со всеми спикерами</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">15:30</span><div class="tl-body"><h4>Lightning talks</h4><p>10 коротких докладов от участников</p></div></div>
+          <div class="tl-row reveal"><span class="tl-time">17:00</span><div class="tl-body tl-body--party"><h4>Закрытие и розыгрыш</h4><p>Итоги, призы, общее фото</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ Tickets ░░ -->
+    <section class="section section--alt" id="tickets">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-eyebrow">04 — Билеты</p>
+            <h2 class="section-title">Выберите тариф</h2>
+          </div>
+          <p class="section-note">Цены растут за 2 недели до старта</p>
+        </div>
+
+        <div class="tickets-grid">
+          <article class="ticket reveal">
+            <p class="ticket__name">Online</p>
+            <p class="ticket__price"><span>₽</span>4&nbsp;900</p>
+            <ul>
+              <li>Трансляция всех треков</li>
+              <li>Записи докладов на 90 дней</li>
+              <li>Чат участников</li>
+            </ul>
+            <a href="#" class="btn btn--ghost btn--full" data-buy="Online">Выбрать</a>
+          </article>
+
+          <article class="ticket ticket--featured reveal">
+            <span class="ticket__badge">Хит</span>
+            <p class="ticket__name">Standard</p>
+            <p class="ticket__price"><span>₽</span>14&nbsp;900</p>
+            <ul>
+              <li>Оффлайн, 2 дня</li>
+              <li>Все воркшопы и afterparty</li>
+              <li>Записи навсегда + мерч</li>
+              <li>Зона нетворкинга</li>
+            </ul>
+            <a href="#" class="btn btn--primary btn--full" data-buy="Standard">Выбрать</a>
+          </article>
+
+          <article class="ticket reveal">
+            <p class="ticket__name">Business</p>
+            <p class="ticket__price"><span>₽</span>29&nbsp;900</p>
+            <ul>
+              <li>Всё из Standard</li>
+              <li>Отдельная lounge-зона</li>
+              <li>Приоритет на воркшопах</li>
+              <li>Ужин со спикерами</li>
+            </ul>
+            <a href="#" class="btn btn--ghost btn--full" data-buy="Business">Выбрать</a>
+          </article>
+        </div>
+        <p class="tickets-note reveal" id="buyNote" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ░░ FAQ ░░ -->
+    <section class="section" id="faq">
+      <div class="container faq__wrap">
+        <div class="reveal">
+          <p class="section-eyebrow">05 — FAQ</p>
+          <h2 class="section-title">Частые вопросы</h2>
+        </div>
+
+        <div class="accordion reveal">
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span>Будут ли записи докладов?</span><i aria-hidden="true"></i>
+            </button>
+            <div class="acc-body"><p>Да. Участники оффлайн-тарифов получают записи навсегда, online — на 90 дней.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span>Можно ли вернуть билет?</span><i aria-hidden="true"></i>
+            </button>
+            <div class="acc-body"><p>Полный возврат — за 14 дней до мероприятия. Позже билет можно переоформить на другого человека.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span>Нужен ли ноутбук на воркшопы?</span><i aria-hidden="true"></i>
+            </button>
+            <div class="acc-body"><p>Желательно. За неделю до старта пришлём список того, что стоит установить заранее.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span>Есть ли скидки для команд?</span><i aria-hidden="true"></i>
+            </button>
+            <div class="acc-body"><p>Да, от 5 билетов — 15%, от 10 — 25%. Напишите на team@codefrontier.dev.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ CTA ░░ -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2>Готовы прокачать инженерную планку?</h2>
+        <p>Присоединяйтесь к 1200 разработчикам в Москве этой осенью.</p>
+        <a href="#tickets" class="btn btn--primary">Забрать билет</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ░░ Footer ░░ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="brand brand--footer"><span class="brand__mark">&lt;/&gt;</span><span class="brand__text">CODE&nbsp;FRONTIER</span></a>
+        <p class="footer__loc">Digital October, Берсеневская наб., 6с1, Москва<br />17–18 октября 2026</p>
+      </div>
+      <nav class="footer__nav" aria-label="Подвал">
+        <a href="#about">О конференции</a>
+        <a href="#speakers">Спикеры</a>
+        <a href="#schedule">Программа</a>
+        <a href="#tickets">Билеты</a>
+      </nav>
+      <div class="footer__social">
+        <a href="#" aria-label="Telegram" class="soc">TG</a>
+        <a href="#" aria-label="YouTube" class="soc">YT</a>
+        <a href="#" aria-label="GitHub" class="soc">GH</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 CODE FRONTIER. Демо-проект для портфолио.</span>
+      <span>Сделано вручную · HTML · CSS · JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
